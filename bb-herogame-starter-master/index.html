@@ -9,24 +9,40 @@
 
 
   <!-- 👍 YOUR HTML HERE 👍 -->
+  <div class='hero'>
+    <img src="./assets/hero3.jpg" id="hero-pic">
+    <div class="stats">
+      <p>Name : <strong><span id="heroName"></span></strong></p>
+      <p>Health : <span id="heroHealth"></span></p>
+      <p>Inventory : <span id="heroInventory"></span></p>
+      <p>Weapon : <span id="heroWeapon"></span></p>
+      <button onClick="updateName()">Change name</button>
+    </div>
+    <div class="actions">
+        <img src="./assets/inn.jpg" id="inn" alt="rest">
+        <img src="./assets/dagger2.jpg" id="dagger" alt="pickUpItem">
+        <img src="./assets/bag.jpeg" id="bag" alt="equipWeapon">
+      </div>
+  </div>
 
+  <div id="attack">
+      <button id="attackBtn">ATTACK ENEMY</button>
+      <p id="attackFeedback"></p>
+  </div>
+  <div class='meany'>
+    <img src="./assets/enemy.jpeg" id="meany-pic">
+    <div class="stats">
+      <p>Name : <strong><span id="enemyName"></span></strong></p>
+      <p>Health : <span id="enemyHealth"></span></p>
+      <p>Damage dealt : <span id="enemyWeapon"></span></p>
+    </div>
+  </div>
 
+  <button id="restart">Restart game</button>
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
-  <div>
-    <img src="./assets/hero2.jpg" id="hero-pic">
-    <p>Name : <span id="heroName"></span></p>
-    <p>Health : <span id="heroHealth"></span></p>
-    <p>Inventory : <span id="heroInventory"></span></p>
-    <p>Weapon : <span id="heroWeapon"></span></p>
-
-  </div>
-  <img src="./assets/dagger1.png" id="inn">
-  <img src="./assets/dagger2.jpg" id="dagger">
-  <img src="./assets/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg" id="bag">
-
-  <button onClick="updateName()">Change name</button>
+  
   <div id="mocha">
   <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
   </div>

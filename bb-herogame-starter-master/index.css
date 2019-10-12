@@ -1,3 +1,48 @@
+.hero, .meany {
+    display:flex;
+    flex-direction: row;
+    border: 1px dashed black;
+    width:800px;
+}
+
 img {
-    max-width: 200px;
+    max-height:300px;
+    width:auto;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions img {
+    width:100px;
+    cursor: pointer;
+}
+
+#attackBtn {
+    background: red;
+    color:white;
+    height:50px;
+}
+
+.meany {
+    display: flex;
+}
+
+#meany-pic {
+    width: 
+}
+
+.stats {
+    width:250px;
+}
+
+#attack * {
+    display:inline;
+}
+
+#restart {
+    display:block;
+    margin-bottom: 50px;
 }
